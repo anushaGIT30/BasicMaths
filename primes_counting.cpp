@@ -11,7 +11,7 @@ int counting(int n, int left, int right) {
     
     for(int i = 2; i * i <= n; i++) {
         if(prime[i] == 1) {
-            for(int j = i * i; j <= n; j += i) {
+            for(int j = i * i; j <= n; j += i) {//optimized
                 prime[j] = 0;
             }
         }
